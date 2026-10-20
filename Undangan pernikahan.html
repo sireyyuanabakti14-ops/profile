@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undangan Fatah Syach & Aqeela Calista</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f9ff;
+            color: #34495e;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        /* COVER DEPAN */
+        .cover {
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: linear-gradient(#e6f3ff, #c5e1f8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .cover h1 {
+            font-size: 38px;
+            color: #426b91;
+        }
+
+        .cover img {
+            width: 230px;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 110px 110px 12px 12px;
+            border: 5px solid white;
+        }
+
+        /* TOMBOL */
+        .tombol {
+            display: inline-block;
+            background-color: #7eacd4;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .tombol:hover {
+            background-color: #426b91;
+        }
+
+        /* MUSIK */
+        .musik {
+            background-color: #e6f3ff;
+            padding: 20px;
+        }
+
+        .musik p {
+            color: #426b91;
+            margin-bottom: 10px;
+        }
+
+        .musik audio {
+            width: 280px;
+            max-width: 100%;
+        }
+
+        /* BAGIAN UNDANGAN */
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            color: #426b91;
+            margin-bottom: 20px;
+        }
+
+        .pengantin, .kotak {
+            background-color: white;
+            border: 1px solid #d0e5f7;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 450px;
+            box-shadow: 0 4px 10px #e1edf7;
+        }
+
+        .pengantin h3, .kotak h3 {
+            color: #6c9bc5;
+            margin-bottom: 10px;
+        }
+
+        /* GALERI FOTO */
+        .galeri {
+            background-color: #eaf4ff;
+            padding: 50px 20px;
+        }
+
+        .galeri p {
+            margin-bottom: 25px;
+        }
+
+        .galeri-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .galeri-container img {
+            display: block;
+            width: 100%;
+            height: 420px;
+            object-fit: contain;
+            background-color: white;
+            border: 5px solid white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #d0e5f7;
+        }
+
+        /* LOKASI */
+        .lokasi {
+            background-color: #e6f3ff;
+            padding: 50px 20px;
+        }
+
+        /* PENUTUP */
+        .penutup {
+            background-color: #dceeff;
+            padding: 50px 20px;
+        }
+
+        .penutup h3 {
+            color: #426b91;
+            margin-top: 20px;
+        }
+
+        /* COPYRIGHT */
+        .copyright {
+            background-color: #426b91;
+            color: white;
+            padding: 18px 10px;
+            font-size: 13px;
+        }
+
+        .copyright p {
+            margin: 3px;
+        }
+
+        /* TAMPILAN HP */
+        @media (max-width: 600px) {
+            .cover h1 {
+                font-size: 29px;
+            }
+
+            .cover img {
+                width: 190px;
+                height: 230px;
+            }
+
+            section {
+                padding: 35px 15px;
+            }
+
+            .galeri-container {
+                grid-template-columns: 1fr;
+                max-width: 380px;
+            }
+
+            .galeri-container img {
+                height: 480px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MUSIK PERNIKAHAN -->
+    <div class="musik">
+        <p>♪ Musik Pernikahan Kami ♪</p>
+
+        <audio controls loop preload="metadata">
+            <source src="Diakhir perang.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung audio.
+        </audio>
+    </div>
+
+    <!-- COVER DEPAN -->
+    <header class="cover">
+        <p>THE WEDDING OF</p>
+
+        <h1>Fatah Syach &amp; Aqeela Calista</h1>
+
+        <img src="images (6).jpg"
+             alt="Foto Fatah Syach dan Aqeela Calista">
+
+        <h3>15 November 2026</h3>
+
+        <p>
+            Dengan penuh rasa bahagia, kami mengundang
+            Anda untuk menjadi bagian dari hari istimewa kami.
+        </p>
+
+        <a href="#undangan" class="tombol">
+            Buka Undangan
+        </a>
+    </header>
+
+    <main id="undangan">
+
+        <!-- PEMBUKA -->
+        <section>
+            <h2>Assalamu'alaikum Wr. Wb.</h2>
+
+            <p>
+                Dengan memohon rahmat dan ridho Allah SWT,
+                kami bermaksud mengundang Bapak/Ibu/Saudara/i
+                untuk menghadiri hari bahagia kami.
+            </p>
+        </section>
+
+        <!-- MEMPELAI -->
+        <section>
+            <h2>Mempelai Pengantin</h2>
+
+            <div class="pengantin">
+                <h3>Fatah Syach</h3>
+                <p>Putra dari</p>
+                <p>Bapak [Attar Syach]</p>
+                <p>dan Ibu [Ananda Faturrahman]</p>
+            </div>
+
+            <div class="pengantin">
+                <h3>Aqeela Calista</h3>
+                <p>Putri dari</p>
+                <p>Bapak [Dimas Singgih Utomo]</p>
+                <p>dan Ibu [Indriarti Edison]</p>
+            </div>
+        </section>
+
+        <!-- DETAIL ACARA -->
+        <section>
+            <h2>Detail Acara</h2>
+
+            <div class="kotak">
+                <h3>Akad Nikah</h3>
+                <p>Minggu, 15 November 2026</p>
+                <p>08.00 - 10.00 WIB</p>
+                <p>Gedung Serbaguna, Bandung</p>
+            </div>
+
+            <div class="kotak">
+                <h3>Resepsi Pernikahan</h3>
+                <p>Minggu, 15 November 2026</p>
+                <p>11.00 - 14.00 WIB</p>
+                <p>Gedung Serbaguna, Bandung</p>
+            </div>
+        </section>
+
+        <!-- GALERI FOTO PERNIKAHAN -->
+        <section class="galeri" id="galeri">
+            <h2>Galeri Foto</h2>
+
+            <p>
+                Kenangan indah Fatah Syach &amp; Aqeela Calista
+                yang akan selalu tersimpan dalam cerita cinta kami.
+            </p>
+
+            <div class="galeri-container">
+                <img src="images (1).jpg"
+                     alt="Kenangan foto pertama">
+
+                <img src="images (5).jpg"
+                     alt="Kenangan foto kedua">
+
+                <img src="images (4).jpg"
+                     alt="Kenangan foto ketiga">
+
+                <img src="images (7).jpg"
+                     alt="Kenangan foto keempat">
+            </div>
+        </section>
+
+        <!-- LOKASI ACARA -->
+        <section class="lokasi">
+            <h2>Lokasi Acara</h2>
+
+            <p>
+                Kami menantikan kehadiran Anda
+                di hari bahagia kami.
+            </p>
+
+            <p>Gedung Serbaguna, Bandung</p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=gedung+pernikahan+Bandung"
+                target="_blank"
+                rel="noopener"
+                class="tombol">
+                Buka Google Maps
+            </a>
+        </section>
+
+        <!-- PENUTUP -->
+        <footer class="penutup">
+            <h2>Terima Kasih</h2>
+
+            <p>
+                Merupakan kebahagiaan bagi kami apabila
+                Bapak/Ibu/Saudara/i berkenan hadir
+                dan memberikan doa restu.
+            </p>
+
+            <h3
